@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 500%;
+    color: var(--cool1);
+    font-family: var(--font1);
+}
+form{
+    display: grid;
+    min-width: 70%;
+    min-height: 70%;
+    width: max-content;
+    height: max-content;
+    max-width: 100%;
+    max-height: 100%;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border:1px solid var(--text1);
+    box-shadow: 0px -10px 10px var(--cool1);
+    align-items: center;
+    justify-items: start;
+    background-color: var(--back1);
+    border-radius: 2% 2% 2% 2%;
+}
+#log_login{
+    grid-area: 1 / 1;
+    background-color: var(--back1);
+    border: none;
+    border-bottom: 1px solid var(--text1);
+    font-size: x-large;
+}
+.log_input{
+    font-family: var(--font2);
+    margin-bottom: 2px;
+}
+.log_input:focus{
+    margin-bottom: 0px;
+    outline: none;
+    border-bottom: 3px solid var(--cool1) !important; 
+}
+#log_passwd{
+    grid-area: 2 / 1;
+    font-size: x-large;
+    background-color: var(--back1);
+    border: none;
+    border-bottom: 1px solid var(--text1);
+}
+#log_button{
+    grid-area: 3 / 1;
+    background-color: var(--back1);
+    border: none;
+    color: var(--cool1)
+}
+#log_button:hover{
+    cursor: pointer;
+    color: var(--text1);
+}
+#log_button:active{
+    color: var(--cool1);
+}
+#log_show{
+    grid-area: 2 / 2;
+    justify-self: center;
+    font-size: 100%;
+    background-color: none;
+    border: none;
+    background-color: var(--back1);
+}
+#log_show:hover{
+    font-weight: bold;
+}
+#log_show:active{
+    font-weight: bold;
+    color: var(--cool1);
+}
+#log_error{
+    color: var(--warn);
+}

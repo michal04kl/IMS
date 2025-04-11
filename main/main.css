@@ -1,0 +1,22 @@
+:root{
+    --side: #68E932;
+    --mixed: #5BDE24;
+    --back1: #f8f8f9;
+    --text1: #252525;
+    --cool1: #4ed216; 
+    --warn: #ff0000;
+    --text2: #9d9d9d;
+    --font1: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --font2: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --light: #f4e514;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--back1);
+}
